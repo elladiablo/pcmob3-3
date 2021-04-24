@@ -8,7 +8,7 @@ export default function AddScreen({ route, navigation }) {
    
     return (
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <Text style={styles.label}>Add your todo</Text>
+        <Text style={styles.label}>Add ELLA DIABLO TASKS</Text>
         <TextInput
           style={styles.textInput}
           value={text}
@@ -30,7 +30,7 @@ export default function AddScreen({ route, navigation }) {
         </View>
    
         <Text style={{ marginTop: 40, color: "grey" }}>
-          This is what you typed:
+          This is where you should type:
         </Text>
         <Text style={{ color: "#333", marginTop: 10 }}>{text}</Text>
       </View>
