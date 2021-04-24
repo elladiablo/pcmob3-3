@@ -91,6 +91,8 @@ export default function NotesScreen({ route, navigation }) {
           );
       }
       
+            
+    
       function renderItem({ item }) {
         return (
           <View
@@ -100,12 +102,15 @@ export default function NotesScreen({ route, navigation }) {
               paddingBottom: 20,
               borderBottomColor: "#ccc",
               borderBottomWidth: 1,
+              flexDirection:"row",
+              justifyContent:"space-between",
             }}
           >
             <Text style={{ textAlign: "left", fontSize: 16 }}>{item.title}</Text>
-          <TouchableOpacity onPress={() => deleteNote(item.id)}>
+            
+            <TouchableOpacity onPress={() => deleteNote(item.id)}>
               <Ionicons name="trash" size={24} color ="black"/>
-          </TouchableOpacity>
+            </TouchableOpacity>
           </View>
         );
       }
